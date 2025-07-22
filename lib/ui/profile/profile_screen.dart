@@ -86,6 +86,13 @@ class ProfileScreen extends StatelessWidget {
         'icon': Icons.money,
         'color': Color(0xFF009688),
       },
+      {
+        'key': 'share_app',
+        'title': 'Share App',
+        'subtitle': 'Learn about our refund policy',
+        'icon': Icons.money,
+        'color': Color(0xFF009688),
+      },
     ];
 
     return Container(

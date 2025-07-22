@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:matri_station/ui/formfillup/basic_details_screen.dart';
 import 'package:matri_station/ui/login_screen.dart';
+import 'package:matri_station/ui/otp_screen.dart';
 import 'package:matri_station/utility/constant.dart';
 import 'package:matri_station/widget/custom_app_bar_other_page.dart';
 
@@ -25,7 +26,7 @@ class RegisterScreen extends StatelessWidget {
           },
           child: Scaffold(
             backgroundColor: Colors.white,
-            appBar: CustomAppBarWidget(title: 'Create Account'),
+            appBar: const CustomAppBarWidget(title: 'Create Account'),
             body: SafeArea(
               child: SingleChildScrollView(
                 padding: const EdgeInsets.symmetric(
@@ -142,7 +143,7 @@ class RegisterScreen extends StatelessWidget {
                       duration: const Duration(milliseconds: 1400),
                       child: ElevatedButton(
                         onPressed: () {
-                          Get.to(() => BasicDetailsScreen());
+                          Get.to(() => OtpScreen());
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: MatriColors.accentRed,

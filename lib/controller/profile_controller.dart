@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:matri_station/ui/profile/my_profile_screen.dart';
 
 class ProfileController extends GetxController {
   var isLoading = false.obs;
@@ -79,7 +80,7 @@ class ProfileController extends GetxController {
   void onMenuTap(String key) {
     switch (key) {
       case 'my_profile':
-        Get.snackbar('My Profile', 'Opening profile details...');
+        Get.to(()=>MyProfileScreen());
         break;
       case 'blocked_users':
         Get.snackbar('Blocked Users', 'Opening blocked users list...');
@@ -101,6 +102,9 @@ class ProfileController extends GetxController {
         break;
       case 'refund_policy':
         Get.snackbar('Refund Policy', 'Opening refund policy...');
+        break;
+      case 'share_app':
+        Get.snackbar('Sharing', 'Opening refund policy...');
         break;
     }
   }
